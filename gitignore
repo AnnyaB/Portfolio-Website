@@ -1,0 +1,30 @@
+# Node modules directory (if using Node.js)
+node_modules/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python compiled files (if applicable)
+__pycache__/
+*.py[cod]
+
+# IDE settings (for IntelliJ/PyCharm)
+.idea/
+*.iml
+
+# Environment variables
+.env
+
+# Compiled files
+*.class
+*.exe
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+

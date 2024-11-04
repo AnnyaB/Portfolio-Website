@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color for better contrast */
+    font-family: Arial, sans-serif; /* Font for better readability */
+    line-height: 1.6; /* Increased line height for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333; /* Dark background for header */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* Main Content */
+main {
+    max-width: 800px; /* Limit width for better readability */
+    margin: auto; /* Center the main content */
+}
+
+/* Welcome Message Header */
+h1.welcome {
+    color: #fff; /* White color for the welcome message */
+    font-size: 3em; /* Increased font size for emphasis */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Add some space above the title */
+}
+
+/* Technical Interests Header */
+h1.technical-interests {
+    color: #000; /* Black color for the technical interests header */
+    font-size: 3em; /* Increased font size for emphasis */
+    text-align: center; /* Center the title */
+    margin-top: 20px; /* Add some space above the title */
+}
+
+h2 {
+    color: #333; /* Dark color for the section header */
+    font-size: 2em; /* Make the heading larger for emphasis */
+    margin-top: 20px; /* Add spacing above the section header */
+}
+
+/* Project Section Styles */
+.project {
+    background-color: #fff; /* White background for project sections */
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.toggle-button {
+    background-color: #333; /* Dark button background */
+    color: white; /* White text on buttons */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.toggle-button:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* GitHub Link */
+.github-link {
+    text-align: center; /* Center the GitHub link */
+    margin-top: 20px; /* Spacing above the link */
+}
+
+.github-link img {
+    vertical-align: middle; /* Align icon vertically with text */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation links on small screens */
+        margin: 5px 0; /* Spacing between stacked links */
+    }
+}

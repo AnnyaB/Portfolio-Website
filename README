@@ -1,0 +1,28 @@
+Starting coursework from 2nd Nov 
+Based on basic web structure development 
+Includes html, css and vanilla js
+
+
+Assignment Tasks:
+
+Create a profile site on GitHub that can be used to support you in building your portfolio of work and applying for placements:
+Pages required
+About you- include name, year of study and award you are studying for. Placeholder image where you would put your own image (or your own image)
+Technical interests (pertinent to the area of work you are interested in)- note this is not a tutorial section, but should contain a title of the technical interest and a 1 - 2 paragraphs about your interest. 
+An appropriate image or placeholder image should be included.
+Portfolio - relevant projects or work you have completed. Users have the option of getting a pop-up window with further information or clicking on a link to go to the project details page
+Project details page - details about the project or work
+Carry out and submit the results of a heuristic evaluation of your completed site using Nielsen's heuristics 
+You are required to use the heuristic evaluation template Download heuristic evaluation templateprovided
+You must not involve anyone in the usability evaluation of your site. Doing so may constitute an academic offence.
+Demonstrate through at least one automated conformance test that you focussed on accessibility in your development work and that the final profile site conforms to level AA of the WCAG
+You must use the WAVE pluginLinks to an external site. for your conformance test and no other technology or techniques.
+You must not involve anyone in the accessibility evaluation of your site. Doing so may constitute an academic offence.
+
+
+
+
+ 
+ 
+
+ 
