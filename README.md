@@ -1,8 +1,16 @@
 ## Main CW
 
-- Integrating html, css, vanilla js
-- Learning and contributing on a regular basis  
-- Beginner's approach to html, css and js 
-- Acessible and usable site practices 
-- Level AA conformance testing 
-- Work in progress 
+- Integrating 
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- No templates or libraries are being implemented 
+  
+## Focus is on
+
+- Web Accessibility
+- Web Usability
+- Conformance should meet the requirements of Level AA
+- Simple yet aesthetic design
+  
+  
