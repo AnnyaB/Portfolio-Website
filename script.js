@@ -9,3 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
         details.style.display = 'none';
     });
 });
+    
