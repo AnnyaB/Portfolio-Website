@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     background-color: #f0f0f0; /* Light grey background for general pages */
     color: #333; /* Dark text color for better contrast */
@@ -40,7 +40,7 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    transition: background-color 0.3s ease; /* For smooth background transition */
 }
 
 nav ul li a:hover {
@@ -58,7 +58,7 @@ h1.welcome {
     color: #fff; /* White color for the welcome message */
     font-size: 3em; /* Increased font size for emphasis */
     text-align: center; /* Center the title */
-    margin-top: 20px; /* Add some space above the title */
+    margin-top: 20px; /* Adding some space above the title */
 }
 
 /* Technical Interests Header */
@@ -66,13 +66,13 @@ h1.technical-interests {
     color: #000; /* Black color for the technical interests header */
     font-size: 3em; /* Increased font size for emphasis */
     text-align: center; /* Center the title */
-    margin-top: 20px; /* Add some space above the title */
+    margin-top: 20px; /* Adding some space above the title */
 }
 
 h2 {
     color: #333; /* Dark color for the section header */
     font-size: 2em; /* Make the heading larger for emphasis */
-    margin-top: 20px; /* Add spacing above the section header */
+    margin-top: 20px; /* Adding spacing above the section header */
 }
 
 /* Project Section Styles */
