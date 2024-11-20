@@ -12,5 +12,7 @@
 - Web Usability
 - Conformance should meet the requirements of Level AA
 - Simple yet aesthetic design
+- Just a basic plan of the real product(portfolio-web)
+- More will be later 
   
   
