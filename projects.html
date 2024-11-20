@@ -1,167 +1,158 @@
-<!DOCTYPE html> <!-- Defines the document as HTML5 -->
-<html lang="en"> <!-- Sets the language of the document to English -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- Specifies UTF-8 character encoding -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Enables compatibility mode for older IE versions -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
-    <title>Projects</title> <!-- Title of the page that appears in the browser tab -->
-    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS file for styling the page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body> <!-- Start of the main content -->
+<body>
 
-<header> <!-- Header section containing navigation links -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li> <!-- Link to the About Me page -->
-            <li><a href="technical.html">Technical Interests</a></li> <!-- Link to the Technical Interests page -->
-            <li><a href="portfolio.html">Portfolio</a></li> <!-- Link to the Portfolio page -->
-            <li><a href="projects.html">Projects</a></li> <!-- Link to the Projects page -->
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="technical.html">Technical Interests</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main> <!-- Main section containing the content of the Projects page -->
-    <section id="projects"> <!-- Section for listing all projects -->
-        <h1>My Projects</h1> <!-- Main heading for the projects section -->
+    <main>
+        <section id="projects">
+            <h1>My Projects</h1>
 
-        <!-- Each project is wrapped in a div with class 'project' and contains a button to toggle additional details -->
-        <div class="project"> <!-- Container for the first project, Fruit-Picker -->
-            <h2>Fruit-Picker</h2> <!-- Title of the Fruit-Picker project -->
-            <p>Based on DSA concepts. I have tried my hands on "choose and display" implementation. Used binary search (log n) time complexity.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('fruitPickerDetails')">Find Out More</button> <!-- Button to reveal more details about the project -->
-            <div id="fruitPickerDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Improved understanding of binary search and DSA concepts.</p>
-                <p><strong>Challenges Faced:</strong> Encountered issues with edge cases in user input.</p>
-                <p><strong>Achievements:</strong> Successfully implemented a functional and efficient picker game.</p>
+            <div class="project">
+                <h2>Fruit-Picker</h2>
+                <p>Based on DSA concepts. I have tried my hands on "choose and display" implementation. Used binary search (log n) time complexity.</p>
+                <button class="toggle-button" onclick="toggleDetails('fruitPickerDetails')">Find Out More</button>
+                <div id="fruitPickerDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Improved understanding of binary search and DSA concepts.</p>
+                    <p><strong>Challenges Faced:</strong> Encountered issues with edge cases in user input.</p>
+                    <p><strong>Achievements:</strong> Successfully implemented a functional and efficient picker game.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project"> <!-- Container for the Maze Runner project -->
-            <h2>Maze Runner</h2> <!-- Title of the Maze Runner project -->
-            <p>Based on A* algorithm (pathfinding algorithm). Designed exclusively to test my basic understanding.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="mazeRunnerDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Enhanced knowledge of pathfinding algorithms and algorithm efficiency.</p>
-                <p><strong>Challenges Faced:</strong> Debugging pathfinding issues in various maze configurations.</p>
-                <p><strong>Achievements:</strong> Developed a functioning maze solver with visual representation.</p>
+            <div class="project">
+                <h2>Maze Runner</h2>
+                <p>Based on A* algorithm (pathfinding algorithm). Designed exclusively to test my basic understanding.</p>
+                <button class="toggle-button" onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button>
+                <div id="mazeRunnerDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Enhanced knowledge of pathfinding algorithms and algorithm efficiency.</p>
+                    <p><strong>Challenges Faced:</strong> Debugging pathfinding issues in various maze configurations.</p>
+                    <p><strong>Achievements:</strong> Developed a functioning maze solver with visual representation.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project"> <!-- Container for the Rapid Retreat project -->
-            <h2>Rapid Retreat</h2> <!-- Title of the Rapid Retreat project -->
-            <p>Designed to test grip of fundamental OOP in Java.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="rapidRetreatDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Deepened understanding of object-oriented programming principles.</p>
-                <p><strong>Challenges Faced:</strong> Implementing polymorphism and inheritance correctly.</p>
-                <p><strong>Achievements:</strong> Created a well-structured application demonstrating OOP concepts.</p>
+            <div class="project">
+                <h2>Rapid Retreat</h2>
+                <p>Designed to test grip of fundamental OOP in Java.</p>
+                <button class="toggle-button" onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button>
+                <div id="rapidRetreatDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Deepened understanding of object-oriented programming principles.</p>
+                    <p><strong>Challenges Faced:</strong> Implementing polymorphism and inheritance correctly.</p>
+                    <p><strong>Achievements:</strong> Created a well-structured application demonstrating OOP concepts.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project"> <!-- Container for the Serpent Snack project -->
-            <h2>Serpent Snack</h2> <!-- Title of the Serpent Snack project -->
-            <p>A classic snake game where players control a growing worm, navigating a grid to collect apples.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('serpentSnackDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="serpentSnackDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Improved game development skills and collision detection techniques.</p>
-                <p><strong>Challenges Faced:</strong> Managing game state and player input responsiveness.</p>
-                <p><strong>Achievements:</strong> Delivered an engaging and playable snake game with smooth mechanics.</p>
+            <div class="project">
+                <h2>Serpent Snack</h2>
+                <p>A classic snake game where players control a growing worm, navigating a grid to collect apples.</p>
+                <button class="toggle-button" onclick="toggleDetails('serpentSnackDetails')">Find Out More</button>
+                <div id="serpentSnackDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Improved game development skills and collision detection techniques.</p>
+                    <p><strong>Challenges Faced:</strong> Managing game state and player input responsiveness.</p>
+                    <p><strong>Achievements:</strong> Delivered an engaging and playable snake game with smooth mechanics.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project"> <!-- Container for the Memory Matching Puzzle project -->
-            <h2>Memory Matching Puzzle</h2> <!-- Title of the Memory Matching Puzzle project -->
-            <p>A captivating puzzle game that challenges players to find matching card pairs.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="memoryMatchingDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Developed logic for game flow and card matching algorithms.</p>
-                <p><strong>Challenges Faced:</strong> Ensuring fair game mechanics and user experience.</p>
-                <p><strong>Achievements:</strong> Created an interactive game that tests memory and concentration.</p>
+            <div class="project">
+                <h2>Memory Matching Puzzle</h2>
+                <p>A captivating puzzle game that challenges players to find matching card pairs.</p>
+                <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button>
+                <div id="memoryMatchingDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Developed logic for game flow and card matching algorithms.</p>
+                    <p><strong>Challenges Faced:</strong> Ensuring fair game mechanics and user experience.</p>
+                    <p><strong>Achievements:</strong> Created an interactive game that tests memory and concentration.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project"> <!-- Container for the Memory Matching Puzzle project -->
-            <h2>Pathfinder Sprint</h2> <!-- Title of the Memory Matching Puzzle project -->
-            <p>A simple grid-based game where the player navigates from a starting point to a goal while avoiding obstacles.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="pathfinderSprintDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Gained experience of Implementing pathfindingalgorithms like Dijkstra’s to calculate the shortest path.Learned how to animate player movements smoothly, handle user input to interact with the game, and render graphics efficiently in Java.</p>
-                <p><strong>Challenges Faced:</strong> Implementing Dijkstra’s algorithm efficiently, ensuring smooth player animations, and handling real-time user input.</p>
-                <p><strong>Achievements:</strong> Mastering pathfinding, creating engaging animations, and enhancing coding skills in Java.</p>
-
-           </div>
-        </div>
-       
-
-        <div class="project"> <!-- Container for the Memory Matching Puzzle project -->
-            <h2>Scenery Maker</h2> <!-- Title of the Memory Matching Puzzle project -->
-            <p>A graphical scenery depicting a truck, tree, and sun in Java.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="sceneryMakerDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Mastered Java OOP principles, including class hierarchy, encapsulation, and method interactions. Gained hands-on experience in graphical programming and designing visual elements using Java.</p>
-                <p><strong>Challenges Faced:</strong> Implementing object-oriented principles effectively, coordinating object interactions, and managing accurate positioning and scaling of graphical elements like the truck, tree, and sun.</p>
-                <p><strong>Achievements:</strong> Successfully built an interactive and visually appealing scenery. Enhanced understanding of object relationships and refined my ability to create modular, reusable code for graphical applications.</p>
-
-           </div>
-        </div>
-       
-        <div class="project"> <!-- Container for the Memory Matching Puzzle project -->
-            <h2>Chaos Arena</h2> <!-- Title of the Memory Matching Puzzle project -->
-            <p>A turn-based battle game using a max-heap priority system to manage entities actions based on attributes..</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="chaosArenaDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Gained hands-on experience with heap-based priority queues, turn-based system optimization, and event-driven programming using SFML for graphics and interactions.</p>
-                <p><strong>Challenges Faced:</strong> Implementing a heap-based priority system, managing dynamic entity actions, and ensuring efficient sorting of entities during each turn.</p>
-                <p><strong>Achievements:</strong> Integrated a max-heap to manage entity actions, designed interactive behaviors, and optimized performance for smooth strategic gameplay..</p>
-
-           </div>
-        </div>
-       
-        <div class="project"> <!-- Container for the Convolutional Neural Network (CNN) project -->
-            <h2>Convolutional Neural Network (CNN)</h2> <!-- Title of the CNN project -->
-            <p>Developing a CNN from scratch for image classification.</p> <!-- Brief project description -->
-            <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button> <!-- Button to reveal more details -->
-            <div id="cnnDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Gained insights into neural network architecture and training processes.</p>
-                <p><strong>Challenges Faced:</strong> Overcoming challenges related to overfitting and data preprocessing.</p>
-                <p><strong>Achievements:</strong> Built a functional CNN that performs well on image datasets.</p>
+            <!-- Updated sections with unique IDs -->
+            <div class="project">
+                <h2>Pathfinder Sprint</h2>
+                <p>A simple grid-based game where the player navigates from a starting point to a goal while avoiding obstacles.</p>
+                <button class="toggle-button" onclick="toggleDetails('pathfinderSprintDetails')">Find Out More</button>
+                <div id="pathfinderSprintDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Gained experience of Implementing pathfinding algorithms like Dijkstra’s to calculate the shortest path. Learned how to animate player movements smoothly, handle user input to interact with the game, and render graphics efficiently in Java.</p>
+                    <p><strong>Challenges Faced:</strong> Implementing Dijkstra’s algorithm efficiently, ensuring smooth player animations, and handling real-time user input.</p>
+                    <p><strong>Achievements:</strong> Mastering pathfinding, creating engaging animations, and enhancing coding skills in Java.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- GitHub Link with an icon -->
-        <div class="github-link">
-            <a href="https://github.com/rb23ack" target="_blank"> <!-- Link to GitHub profile opening in a new tab -->
-                <img src="GITHUB.jpg" alt="GitHub Icon" style="width: 32px; height: 32px;"> <!-- GitHub icon image -->
-                Visit my GitHub <!-- Link text -->
-            </a>
-        </div>
-    </section>
-</main>
+            <div class="project">
+                <h2>Scenery Maker</h2>
+                <p>A graphical scenery depicting a truck, tree, and sun in Java.</p>
+                <button class="toggle-button" onclick="toggleDetails('sceneryMakerDetails')">Find Out More</button>
+                <div id="sceneryMakerDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Mastered Java OOP principles, including class hierarchy, encapsulation, and method interactions. Gained hands-on experience in graphical programming and designing visual elements using Java.</p>
+                    <p><strong>Challenges Faced:</strong> Implementing object-oriented principles effectively, coordinating object interactions, and managing accurate positioning and scaling of graphical elements like the truck, tree, and sun.</p>
+                    <p><strong>Achievements:</strong> Successfully built an interactive and visually appealing scenery. Enhanced understanding of object relationships and refined my ability to create modular, reusable code for graphical applications.</p>
+                </div>
+            </div>
 
-<script>
-    /**
-     * JavaScript function to toggle the display of project details.
-     * @param {string} id - The ID of the element to toggle.
-     */
-    function toggleDetails(id) {
-        const details = document.getElementById(id); // Gets the element with the provided ID
-        if (details.style.display === "none" || details.style.display === "") { // Checks if it's hidden
-            details.style.display = "block"; // If hidden, make it visible
-        } else {
-            details.style.display = "none"; // If visible, hide it
-        }
-    }
-</script> <!-- End of script for toggling project details visibility -->
+            <div class="project">
+                <h2>Chaos Arena</h2>
+                <p>A turn-based battle game using a max-heap priority system to manage entities actions based on attributes.</p>
+                <button class="toggle-button" onclick="toggleDetails('chaosArenaDetails')">Find Out More</button>
+                <div id="chaosArenaDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Gained hands-on experience with heap-based priority queues, turn-based system optimization, and event-driven programming using SFML for graphics and interactions.</p>
+                    <p><strong>Challenges Faced:</strong> Implementing a heap-based priority system, managing dynamic entity actions, and ensuring efficient sorting of entities during each turn.</p>
+                    <p><strong>Achievements:</strong> Integrated a max-heap to manage entity actions, designed interactive behaviors, and optimized performance for smooth strategic gameplay.</p>
+                </div>
+            </div>
 
-    
+            <div class="project">
+                <h2>Convolutional Neural Network (CNN)</h2>
+                <p>Developing a CNN from scratch for image classification.</p>
+                <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button>
+                <div id="cnnDetails" class="details" style="display:none;">
+                    <p><strong>What I Learned:</strong> Gained insights into neural network architecture and training processes.</p>
+                    <p><strong>Challenges Faced:</strong> Overcoming challenges related to overfitting and data preprocessing.</p>
+                    <p><strong>Achievements:</strong> Built a functional CNN that performs well on image datasets.</p>
+                </div>
+            </div>
+
+            <!-- GitHub Link -->
+            <div class="github-link">
+                <a href="https://github.com/rb23ack" target="_blank">
+                    <img src="GITHUB.jpg" alt="GitHub Icon" style="width: 32px; height: 32px;">
+                    Visit my GitHub
+                </a>
+            </div>
+
+        </section>
+    </main>
 
     <footer>
-    <!-- Footer with contact or copyright information -->
-    <p>© 2024 Riya Basak</p> <!-- year and name -->
-</footer>   
+        <p>© 2024 Riya Basak</p>
+    </footer>
 
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 
-    </body> <!-- End of the main content of the page -->    
-</html> <!-- End of the HTML document -->
+</body>
+
+</html>
+
