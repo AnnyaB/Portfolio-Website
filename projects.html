@@ -114,27 +114,23 @@
             <p>A turn-based battle game using a max-heap priority system to manage entities actions based on attributes.</p> <!-- Brief project description -->
             <button class="toggle-button" onclick="toggleDetails('chaosArenaDetails')">Find Out More</button> <!-- Button to reveal more details -->
             <div id="chaosArenaDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Gained expertise in using priority queues, max-heaps, and battle mechanics in game design. Also enhanced my understanding of implementing AI and optimizing resource management in games.</p>
-                <p><strong>Challenges Faced:</strong> Balancing game mechanics, ensuring fair play, and optimizing the heap-based priority system for fast-paced action.</p>
-                <p><strong>Achievements:</strong> Developed an engaging game with a unique battle system that utilized advanced data structures, enhancing my coding proficiency.</p>
+                <p><strong>What I Learned:</strong> Mastered implementing heap data structures (max-heap) to manage game events efficiently. Improved skills in managing turn-based actions in games.</p>
+                <p><strong>Challenges Faced:</strong> Ensuring balanced gameplay and optimizing heap operations for real-time performance.</p>
+                <p><strong>Achievements:</strong> Developed a strategic and dynamic gameplay system using heaps.</p>
             </div>
         </div>
 
-    </section>
-
-        <!-- New CNN Project -->
-        <div class="project"> <!-- Container for the CNN Project -->
-            <h2>Convolutional Neural Network (CNN) for Image Classification</h2> <!-- Title of the CNN project -->
-            <p>A deep learning project for classifying images using a CNN model built with TensorFlow.</p> <!-- Brief project description -->
+        <!-- CNN Project Section -->
+        <div class="project"> <!-- Container for the CNN project -->
+            <h2>Convolutional Neural Network (CNN) from Scratch</h2> <!-- Title of the CNN project -->
+            <p>This project involves building a convolutional neural network from scratch, aimed at recognizing patterns in images.</p> <!-- Brief project description -->
             <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button> <!-- Button to reveal more details -->
             <div id="cnnDetails" class="details" style="display:none;"> <!-- Hidden div with detailed project info -->
-                <p><strong>What I Learned:</strong> Gained hands-on experience with building and training convolutional neural networks for image classification tasks. Improved my skills in TensorFlow and Keras frameworks.</p>
-                <p><strong>Challenges Faced:</strong> Training the model with large datasets and optimizing the model architecture for better accuracy.</p>
-                <p><strong>Achievements:</strong> Successfully built a CNN model that can accurately classify images, enhancing my understanding of deep learning and AI.</p>
+                <p><strong>What I Learned:</strong> Gained in-depth understanding of CNN layers (convolution, pooling, and fully connected layers), backpropagation, and gradient descent.</p>
+                <p><strong>Challenges Faced:</strong> Ensuring efficient training, tuning hyperparameters, and preventing overfitting.</p>
+                <p><strong>Achievements:</strong> Successfully implemented a CNN from scratch using Python and NumPy, achieving good accuracy on small image datasets.</p>
             </div>
         </div>
-
-    </section>
 
         <!-- GitHub Link with an icon -->
         <div class="github-link">
@@ -143,41 +139,31 @@
                 Visit my GitHub <!-- Link text -->
             </a>
         </div>
-    </section>
 
+    </section> <!-- End of projects section -->
 </main>
 
-<!-- Footer with credit to the creator -->
-<footer> <!-- Footer section -->
-    <p>© 2024 Riya Basak</p> <!-- Text with the creator's name -->
+<footer>
+    <!-- Footer with contact or copyright information -->
+    <p>© 2024 Riya Basak</p> <!-- year and name -->
 </footer>
-
+<!-- Script to toggle project details visibility -->
 <script>
     function toggleDetails(id) {
         const details = document.getElementById(id);
-        const allDetails = document.querySelectorAll('.details');
-        allDetails.forEach(detail => {
-            if (detail !== details) {
-                detail.style.display = 'none'; // Close other details
-            }
-        });
-        details.style.display = (details.style.display === "block") ? "none" : "block"; // Toggle the clicked details
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
     }
 
-    // Setting project details to be hidden initially
-    document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll('.details').forEach(details => {
-            details.style.display = 'none';
-        });
-    });
-
-    // Toggle Dark/Light Mode
-    document.querySelector('.toggle-button').addEventListener('click', () => {
+    // Dark Mode Toggle Functionality
+    const toggleButton = document.querySelector('.toggle-button');
+    toggleButton.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
 </script>
 
-</body> <!-- End of the main content -->
+</body> <!-- End of body -->
 </html>
-   
-
