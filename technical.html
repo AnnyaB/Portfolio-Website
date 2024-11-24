@@ -19,6 +19,13 @@
     </nav>
 </header>
 
+<header>
+    <!-- Toggle Mode Button inside header -->
+    <button class="toggle-button">Adjust Mode</button>
+</header>
+
+
+
 <main>
     <!-- Main content section for listing technical interests -->
     <h1 class="technical-interests">Technical Interests</h1> <!-- Page title styled with a CSS class -->
@@ -80,6 +87,17 @@
     <!-- Footer with contact or copyright information -->
     <p>© 2024 Riya Basak</p> <!-- year and name -->
 </footer>
-  
+
+<script>
+    // Toggle Dark/Light Mode
+    document.querySelector('.toggle-button').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+
+
+
 </body>    
 </html>
+
