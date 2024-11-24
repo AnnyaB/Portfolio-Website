@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- Defines the document as HTML5 -->
+!DOCTYPE html> <!-- Defines the document as HTML5 -->
 <html lang="en"> <!-- Sets the language of the document to English -->
 
 <head>
@@ -20,6 +20,11 @@
             <li><a href="projects.html">Projects</a></li> <!-- Link to the Projects page -->
         </ul>
     </nav>
+</header>
+
+<header>
+    <!-- Toggle Mode Button inside header -->
+    <button class="toggle-button">Adjust Mode</button>
 </header>
 
 <main> <!-- Main section containing the content of the Projects page -->
@@ -147,10 +152,16 @@
     <p>© 2024 Riya Basak</p> <!-- Text with the creator's name -->
 </footer>
 
-<script> <!-- JavaScript to toggle project details -->
+<script>
     function toggleDetails(id) {
         const details = document.getElementById(id);
-        details.style.display = (details.style.display === "block") ? "none" : "block";
+        const allDetails = document.querySelectorAll('.details');
+        allDetails.forEach(detail => {
+            if (detail !== details) {
+                detail.style.display = 'none'; // Close other details
+            }
+        });
+        details.style.display = (details.style.display === "block") ? "none" : "block"; // Toggle the clicked details
     }
 
     // Setting project details to be hidden initially
@@ -158,6 +169,11 @@
         document.querySelectorAll('.details').forEach(details => {
             details.style.display = 'none';
         });
+    });
+
+    // Toggle Dark/Light Mode
+    document.querySelector('.toggle-button').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
     });
 </script>
 
