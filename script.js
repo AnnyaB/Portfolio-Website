@@ -8,7 +8,7 @@ document.querySelector('.toggle-button').addEventListener('click', () => {
 function toggleDetails(id) {
     const details = document.getElementById(id);
     details.style.display = (details.style.display === "block") ? "none" : "block";
-}
+}  
 
 // Setting project details to be hidden initially
 document.addEventListener("DOMContentLoaded", () => {
