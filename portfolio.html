@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,61 +8,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Main header with navigation -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="technical.html">Technical Interests</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Button to toggle dark/light mode -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="technical.html">Technical Interests</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        <button class="toggle-button">Adjust Mode</button>
     </header>
-    <main>
-        <section id="portfolio">
-            <h1>My Portfolio</h1>
-            <h2>CV Details</h2>
-            <p><strong>Name:</strong> Riya Basak</p>
-            <p><strong>Email:</strong> 
-                <a href="mailto:riyabasak639@gmail.com">
-                    <img src="EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 16px; height: 16px; vertical-align: middle;">
-                    riyabasak639@gmail.com
-                </a>
-            </p>
-            <p><strong>LinkedIn:</strong> 
-                <a href="https://www.linkedin.com/in/riya-b-506346315" target="_blank">
-                    <img src="LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 16px; height: 16px; vertical-align: middle;">
-                    LinkedIn Profile
-                </a>
-            </p>
 
-            <h2>Work Experience</h2>
-            <h3>Remote Sensing Technician</h3>
-            <p><strong>ISRO</strong> - Summer Internship</p>
-            <p>Gained experience in analytical skills, space science, advanced mathematics, remote sensing, research skills, LIDAR, GIS, geospatial namaste, and optics.</p>
+    <section id="portfolio">
+        <h1>My Portfolio</h1>
 
-            <h3>Data Clerk</h3>
-            <p><strong>Limango</strong></p>
-            <p>Worked as a Data Clerk, handling data entry and management tasks, enhancing my attention to detail and organizational skills.</p>
+        <h2>CV Details</h2>
+        <p><strong>Name:</strong> Riya Basak</p>
+        <p><strong>Email:</strong>
+            <a href="mailto:riyabasak639@gmail.com">
+                <img src="EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 16px; height: 16px; vertical-align: middle;">
+                riyabasak639@gmail.com
+            </a>
+        </p>
+        <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/riya-b-506346315" target="_blank">
+                <img src="LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 16px; height: 16px; vertical-align: middle;">
+                LinkedIn Profile
+            </a>
+        </p>
 
-            <h2>Projects</h2>
-            <ul>
-                <li>Fruit-Picker</li>
-                <li>Maze Runner</li>
-                <li>Rapid Retreat</li>
-                <li>Serpent Snack</li>
-                <li>Memory Matching Puzzle</li>
-                <li>Convolutional Neural Network (CNN)</li>
-            </ul>
-        </section>
-    </main>
+        <h2>Work Experience</h2>
+        <h3>Remote Sensing Technician</h3>
+        <p><strong>ISRO</strong> - Summer Internship</p>
+        <p>Gained experience in analytical skills, space science, advanced mathematics, remote sensing, research skills, LIDAR, GIS, geospatial analysis, and optics.</p>
 
-     <footer>
-    <!-- Footer with contact or copyright information -->
-    <p>© 2024 Riya Basak</p> <!-- year and name -->
+        <h3>Data Clerk</h3>
+        <p><strong>Limango</strong></p>
+        <p>Worked as a Data Clerk, handling data entry and management tasks, enhancing my attention to detail and organizational skills.</p>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>Fruit-Picker</li>
+            <li>Maze Runner</li>
+            <li>Rapid Retreat</li>
+            <li>Serpent Snack</li>
+            <li>Memory Matching Puzzle</li>
+            <li>Convolutional Neural Network (CNN)</li>
+        </ul>
+    </section>
+</main>
+
+<!-- Footer with copyright information -->
+<footer>
+    <p>© 2024 Riya Basak</p>
 </footer>
 
-
-    
+<script>
+    // Toggle Dark/Light Mode
+    document.querySelector('.toggle-button').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
 </body>
 </html>
