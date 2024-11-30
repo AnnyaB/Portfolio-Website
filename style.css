@@ -1,10 +1,10 @@
- /* Light Mode Styles (Default) */
+/* Light Mode Styles (Default) */
 :root {
     --background-color-light: #f0f0f0;
     --background-color-dark: #333;
     --text-color-light: #333;
     --text-color-dark: #fff;
-    --button-bg-light: #333;
+    --button-bg-light: #36454f; /* Charcoal color for light mode */
     --button-bg-dark: #555;
     --border-color-light: #ccc;
     --border-color-dark: #444;
@@ -15,10 +15,13 @@
 body {
     background-color: var(--background-color-light); /* Light grey background for general pages */
     color: var(--text-color-light); /* Dark text color for better contrast */
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    display: flex; /* Flexbox layout to position footer at the bottom */
+    flex-direction: column;
+    height: 100vh; /* Ensures the body takes full viewport height */
 }
 
 body.dark-mode {
@@ -74,6 +77,7 @@ nav ul li a:hover {
 main {
     max-width: 800px;
     margin: auto;
+    flex: 1; /* Makes the main content take available space */
 }
 
 /* Technical Interests Header */
@@ -129,7 +133,7 @@ body.dark-mode .project {
 
 /* Toggle Button */
 .toggle-button {
-    background-color: var(--button-bg-light);
+    background-color: var(--button-bg-light); /* Charcoal background for light mode */
     color: var(--text-color-dark); /* White text on buttons */
     border: none;
     padding: 10px 15px;
@@ -144,7 +148,7 @@ body.dark-mode .toggle-button {
 }
 
 .toggle-button:hover {
-    background-color: #555;
+    background-color: #555; /* Slightly darker on hover */
 }
 
 /* GitHub Link */
@@ -163,5 +167,21 @@ body.dark-mode .toggle-button {
         display: block;
         margin: 5px 0;
     }
-}      
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Centers the footer text horizontally */
+    padding: 10px 0; /* Adds vertical padding for better spacing */
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    background-color: inherit; /* Matches the current background color */
+    position: relative; /* Keeps it beneath the content naturally */
+    margin-top: 20px; /* Adds some space between content and the footer */
+    color: var(--text-color-light); /* Adjusts text color to match light mode */
+}
+
+body.dark-mode footer {
+    color: var(--text-color-dark); /* Adjusts text color for dark mode */
+}
+    
    
