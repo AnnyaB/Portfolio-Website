@@ -27,4 +27,4 @@ function updateTextColor() {
             element.style.color = ''; // Default text color in light mode
         }
     });
-}  
+}      
