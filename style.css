@@ -133,7 +133,7 @@ body.dark-mode .project {
 
 /* Toggle Button */
 .toggle-button {
-    background-color: var(--button-bg-light); /* Charcoal background for light mode */
+    background-color: #00008B; /* Dark blue background for light mode */
     color: var(--text-color-dark); /* White text on buttons */
     border: none;
     padding: 10px 15px;
@@ -143,13 +143,14 @@ body.dark-mode .project {
 }
 
 body.dark-mode .toggle-button {
-    background-color: var(--button-bg-dark); /* Darker button background in dark mode */
+    background-color: #00008B; /* Dark blue background in dark mode */
     color: var(--text-color-dark); /* White text in dark mode */
 }
 
 .toggle-button:hover {
-    background-color: #555; /* Slightly darker on hover */
+    background-color: #000080; /* Slightly darker blue on hover */
 }
+
 
 /* GitHub Link */
 .github-link {
@@ -183,5 +184,6 @@ footer {
 body.dark-mode footer {
     color: var(--text-color-dark); /* Adjusts text color for dark mode */
 }
+
     
    
