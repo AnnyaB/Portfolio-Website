@@ -10,6 +10,7 @@
     --border-color-dark: #444;
     --link-color-light: #333; /* Original link color */
     --link-color-dark: #fff; /* White link color in dark mode */
+    --focus-outline: 2px solid #ff9900; /* Define a high-contrast focus outline */
 }
 
 body {
@@ -139,7 +140,7 @@ body.dark-mode .project {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added smooth animation */
 }
 
 body.dark-mode .toggle-button {
@@ -151,6 +152,46 @@ body.dark-mode .toggle-button {
     background-color: #000080; /* Slightly darker blue on hover */
 }
 
+.toggle-button:focus {
+    outline: var(--focus-outline); /* High-contrast outline on focus */
+    transform: scale(1.1); /* Slight scale effect for feedback when focused */
+}
+
+/* Visual Feedback on Dark Mode Toggle */
+body.dark-mode .toggle-button {
+    background-color: #444; /* Change button color when dark mode is active */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Temporary Status Message for Dark Mode Toggle */
+.status-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body.dark-mode .status-message {
+    display: block;
+    opacity: 1;
+}
+
+/* Automatically hide status message after a few seconds */
+@keyframes hideStatusMessage {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+body.dark-mode .status-message.active {
+    animation: hideStatusMessage 3s forwards;
+}
 
 /* GitHub Link */
 .github-link {
@@ -184,6 +225,58 @@ footer {
 body.dark-mode footer {
     color: var(--text-color-dark); /* Adjusts text color for dark mode */
 }
+
+
+/* Default (Light Mode) Styles */
+#help-section {
+    padding: 20px;
+}
+
+#help-section h2 {
+    color: #333333; /* Dark text for light background */
+}
+
+#help-section p {
+    color: #333333; /* Dark text for light background */
+    background-color: #f5f5f5; /* Light background for the text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#help-section .help-button {
+    background-color: #ffeb3b; /* Yellow background for the button */
+    color: #333333; /* Dark text for the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles */
+body.dark-mode #help-section h2 {
+    color: #ffffff; /* White text for dark background */
+}
+
+body.dark-mode #help-section p {
+    color: #f5f5f5; /* Light text for dark background */
+    background-color: #333333; /* Dark background for the text */
+}
+
+body.dark-mode #help-section .help-button {
+    background-color: #fbc02d; /* Darker yellow button for dark mode */
+    color: #333333; /* Dark text for the button */
+}
+
+body.dark-mode #help-section .help-button:hover {
+    background-color: #fdd835; /* Lighter yellow on hover */
+}
+
+/* Dark mode toggle button styles */
+body.dark-mode {
+    background-color: #333333;
+    color: #f5f5f5;
+}
+
 
     
    
