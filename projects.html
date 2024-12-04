@@ -21,181 +21,200 @@
         </nav>
     </header>
 
+    <!-- Toggle Button for Dark Mode -->
     <header>
-        <button class="toggle-button adjust-mode">Adjust Mode</button>
+        <button class="toggle-button adjust-mode" id="toggle-button">
+            Switch to Dark Mode
+        </button>
     </header>
 
     <main>
         <section id="projects">
-            <h1>MY PROJECTS</h1>
+            <h1>My Projects</h1>
+            <p>Welcome to my projects page! Below you'll find a list of the exciting projects I've worked on, showcasing my skills in various areas including algorithms, game development, AI, and much more. Click "Find Out More" to learn about the challenges I faced, what I learned, and to access the GitHub repositories for each project.</p>
 
-        <table class="interests-table">
-            <thead>
-                <tr>
-                     <th> Discover My GitHub Account And Work </th>
-                </tr>
-            </thead>
 
-                <tbody>
-                    <tr><td><a href="#My-GitHub">• GitHub </a></td></tr>
-                    <tr><td><a href="#fruit-picker">• Fruit-Picker</a></td></tr>
-                    <tr><td><a href="#maze-runner">• Maze Runner</a></td></tr>
-                    <tr><td><a href="#rapid-retreat">• Rapid Retreat</a></td></tr>
-                    <tr><td><a href="#serpent-snack">• Serpent Snack</a></td></tr>
-                    <tr><td><a href="#memory-matching-puzzle">• Memory Matching Puzzle</a></td></tr>
-                    <tr><td><a href="#pathfinder-sprint">• Pathfinder Sprint</a></td></tr>
-                    <tr><td><a href="#scenery-maker">• Scenery Maker</a></td></tr>
-                    <tr><td><a href="#chaos-arena">• Chaos Arena</a></td></tr>
-                    <tr><td><a href="#cnn">• CNN from Scratch</a></td></tr>
-                </tbody>
-            </table>
-
-            <!-- Project Sections -->
-            <section id="fruit-picker">
-                <div class="project">
-                    <img src="fruit_picker.jpg" alt="Fruit Picker Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Fruit-Picker</h2>
-                    <p>Based on DSA concepts. I have tried my hands on "choose and display" implementation. Used binary search (log n) time complexity.</p>
-                    <button class="toggle-button" onclick="toggleDetails('fruitPickerDetails')">Find Out More</button>
-                    <div id="fruitPickerDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Improved understanding of binary search and DSA concepts.</p>
-                        <p><strong>Challenges Faced:</strong> Encountered issues with edge cases in user input.</p>
-                        <p><strong>Achievements:</strong> Successfully implemented a functional and efficient picker game.</p>
-                    </div>
+            <!-- GitHub Link -->
+            <section id="My-GitHub">
+                <h2>Find Out More About My Work</h2>
+                <div class="github-link">
+                    <a href="https://github.com/rb23ack" target="_blank" style="opacity: 1; color: white; background-color: #2C3E50;">
+                        <img src="GITHUB.jpg" alt="GitHub Logo" style="width: 42px; height: 42px;"> Visit My GitHub
+                    </a>
                 </div>
             </section>
+
+            <!-- Projects Table -->
+            <ul class="github-projects-list">
+    <li><a href="#fruit-picker"> Fruit-Picker</a></li>
+    <li><a href="#maze-runner"> Maze Runner</a></li>
+    <li><a href="#rapid-retreat"> Rapid Retreat</a></li>
+    <li><a href="#serpent-snack"> Serpent Snack</a></li>
+    <li><a href="#memory-matching-puzzle"> Memory Matching Puzzle</a></li>
+    <li><a href="#pathfinder-sprint"> Pathfinder Sprint</a></li>
+    <li><a href="#scenery-maker"> Scenery Maker</a></li>
+    <li><a href="#chaos-arena"> Chaos Arena</a></li>
+    <li><a href="#cnn"> CNN from Scratch</a></li>
+    <li><a href="#treequest"> TreeQuest - Algorithmic Adventures</a></li>
+</ul>
+
+            <!-- Project Details Section (Clean and Organized) -->
+           <section id="fruit-picker">
+    <div class="project">
+        <img src="fruit_picker.jpg" alt="Fruit Picker Icon" class="project-icon">
+        <h2>Fruit-Picker</h2>
+        <p>Based on DSA concepts. Implemented "choose and display" using binary search.</p>
+        <button class="toggle-button" onclick="toggleDetails('fruitPickerDetails')">Find Out More</button>
+        <div id="fruitPickerDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Improved understanding of binary search and DSA concepts.</p>
+            <p><strong>Challenges Faced:</strong> Handling edge cases in user input.</p>
+            <p><strong>Achievements:</strong> Built a functional and efficient picker game.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Fruit-Picker.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+    </section>
 
             <section id="maze-runner">
-                <div class="project">
-                    <img src="maze_runner.jpg" alt="Maze Runner Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Maze Runner</h2>
-                    <p>Based on A* algorithm (pathfinding algorithm). Designed exclusively to test my basic understanding.</p>
-                    <button class="toggle-button" onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button>
-                    <div id="mazeRunnerDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Enhanced knowledge of pathfinding algorithms and algorithm efficiency.</p>
-                        <p><strong>Challenges Faced:</strong> Debugging pathfinding issues in various maze configurations.</p>
-                        <p><strong>Achievements:</strong> Developed a functioning maze solver with visual representation.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="rapid-retreat">
-                <div class="project">
-                    <img src="rapid_retreat.jpg" alt="Rapid Retreat Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Rapid Retreat</h2>
-                    <p>Designed to test grip of fundamental OOP in Java.</p>
-                    <button class="toggle-button" onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button>
-                    <div id="rapidRetreatDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Deepened understanding of object-oriented programming principles.</p>
-                        <p><strong>Challenges Faced:</strong> Implementing polymorphism and inheritance correctly.</p>
-                        <p><strong>Achievements:</strong> Created a well-structured application demonstrating OOP concepts.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="serpent-snack">
-                <div class="project">
-                    <img src="serpent_snack.jpg" alt="Serpent Snack Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Serpent Snack</h2>
-                    <p>A classic snake game where players control a growing worm, navigating a grid to collect apples.</p>
-                    <button class="toggle-button" onclick="toggleDetails('serpentSnackDetails')">Find Out More</button>
-                    <div id="serpentSnackDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Improved game development skills and collision detection techniques.</p>
-                        <p><strong>Challenges Faced:</strong> Managing game state and player input responsiveness.</p>
-                        <p><strong>Achievements:</strong> Delivered an engaging and playable snake game with smooth mechanics.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="memory-matching-puzzle">
-                <div class="project">
-                    <img src="memory_matching_puzzle.jpg" alt="Memory Matching Puzzle Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Memory Matching Puzzle</h2>
-                    <p>A captivating puzzle game that challenges players to find matching card pairs.</p>
-                    <button class="toggle-button" onclick="toggleDetails('memoryMatchingDetails')">Find Out More</button>
-                    <div id="memoryMatchingDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Developed logic for game flow and card matching algorithms.</p>
-                        <p><strong>Challenges Faced:</strong> Ensuring fair game mechanics and user experience.</p>
-                        <p><strong>Achievements:</strong> Created an interactive game that tests memory and concentration.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="pathfinder-sprint">
-                <div class="project">
-                    <img src="pathfinder_sprint.jpg" alt="Pathfinder Sprint Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Pathfinder Sprint</h2>
-                    <p>A simple grid-based game where the player navigates from a starting point to a goal while avoiding obstacles.</p>
-                    <button class="toggle-button" onclick="toggleDetails('pathfinderSprintDetails')">Find Out More</button>
-                    <div id="pathfinderSprintDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Gained experience in implementing pathfinding algorithms like Dijkstra’s to calculate the shortest path.</p>
-                        <p><strong>Challenges Faced:</strong> Implementing Dijkstra’s algorithm efficiently, ensuring smooth player animations, and handling real-time user input.</p>
-                        <p><strong>Achievements:</strong> Mastering pathfinding, creating engaging animations, and enhancing coding skills in Java.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="scenery-maker">
-                <div class="project">
-                    <img src="scenery_maker.jpg" alt="Scnenery Maker Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Scenery Maker</h2>
-                    <p>A graphical scenery depicting a truck, tree, and sun in Java.</p>
-                    <button class="toggle-button" onclick="toggleDetails('sceneryMakerDetails')">Find Out More</button>
-                    <div id="sceneryMakerDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Mastered Java OOP principles, including class hierarchy, encapsulation, and method interactions. Gained hands-on experience in graphical programming.</p>
-                        <p><strong>Challenges Faced:</strong> Implementing object-oriented principles effectively, coordinating object interactions, and managing accurate positioning of graphical elements.</p>
-                        <p><strong>Achievements:</strong> Successfully built an interactive and visually appealing scenery.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="chaos-arena">
-                <div class="project">
-                    <img src="chaos_arena.jpg" alt="Chaos Arena Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>Chaos Arena</h2>
-                    <p>A turn-based battle game using a max-heap priority system to manage entities actions based on attributes.</p>
-                    <button class="toggle-button" onclick="toggleDetails('chaosArenaDetails')">Find Out More</button>
-                    <div id="chaosArenaDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Mastered implementing heap data structures (max-heap) to manage game events efficiently.</p>
-                        <p><strong>Challenges Faced:</strong> Balancing game mechanics and ensuring the heap system functions properly for managing actions.</p>
-                        <p><strong>Achievements:</strong> Created an exciting battle system that showcases heap data structure skills in a real-world game environment.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="cnn">
-                <div class="project">
-                    <img src="cnn_from_scratch.jpg" alt="CNN from scratch Icon" style="width: 72px; height: 72px; vertical-align: middle;">
-                    <h2>CNN from Scratch</h2>
-                    <p>Developed a Convolutional Neural Network (CNN) model from scratch for image classification.</p>
-                    <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button>
-                    <div id="cnnDetails" class="details" style="display:none;">
-                        <p><strong>What I Learned:</strong> Gained deep understanding of neural network architecture, backpropagation, and CNN operations.</p>
-                        <p><strong>Challenges Faced:</strong> Dealing with complex neural network components and optimizing model accuracy.</p>
-                        <p><strong>Achievements:</strong> Successfully built and trained a CNN model to classify images, improving my understanding of deep learning concepts.</p>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="My-GitHub">
-    <h2>Find out more about my work</h2> <!-- Added heading here -->
-    <div class="github-link">
-        <a href="https://github.com/rb23ack" target="_blank" style="opacity: 1; color: white; background-color: #2C3E50;">
-        <img src="GITHUB.jpg" alt="GitHub LOGO" style="width: 32px; height: 32px;">
-        Visit my GitHub
-        </a>
+    <div class="project">
+        <img src="maze_runner.jpg" alt="Maze Runner Icon" class="project-icon">
+        <h2>Maze Runner</h2>
+        <p>Pathfinding algorithm-based project using the A* algorithm.</p>
+        <button class="toggle-button" onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button>
+        <div id="mazeRunnerDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Enhanced knowledge of pathfinding and algorithm efficiency.</p>
+            <p><strong>Challenges Faced:</strong> Debugging maze configurations and pathfinding issues.</p>
+            <p><strong>Achievements:</strong> Created a maze solver with visual representation.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Maze_Runner.git" target="_blank">View on GitHub</a></p>
+        </div>
     </div>
 </section>
 
 
+           <section id="rapid-retreat">
+    <div class="project">
+        <img src="rapid_retreat.jpg" alt="Rapid Retreat Icon" class="project-icon">
+        <h2>Rapid Retreat</h2>
+        <p>Focused on practicing fundamental OOP in Java.</p>
+        <button class="toggle-button" onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button>
+        <div id="rapidRetreatDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Deepened understanding of OOP principles.</p>
+            <p><strong>Challenges Faced:</strong> Implementing polymorphism and inheritance.</p>
+            <p><strong>Achievements:</strong> Developed a well-structured OOP application.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Rapid-Retreat.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="serpent-snack">
+    <div class="project">
+        <img src="serpent_snack.jpg" alt="Serpent Snack Icon" class="project-icon">
+        <h2>Serpent Snack</h2>
+        <p>Classic snake game where players collect apples to grow the snake.</p>
+        <button class="toggle-button" onclick="toggleDetails('serpentSnackDetails')">Find Out More</button>
+        <div id="serpentSnackDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Improved game development and collision detection skills.</p>
+            <p><strong>Challenges Faced:</strong> Managing game state and player input.</p>
+            <p><strong>Achievements:</strong> Created an engaging and playable snake game.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Serpent_Snack.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="memory-matching-puzzle">
+    <div class="project">
+        <img src="memory_matching_puzzle.jpg" alt="Memory Matching Puzzle Icon" class="project-icon">
+        <h2>Memory Matching Puzzle</h2>
+        <p>A fun game where players match cards based on memory.</p>
+        <button class="toggle-button" onclick="toggleDetails('memoryMatchingPuzzleDetails')">Find Out More</button>
+        <div id="memoryMatchingPuzzleDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Implementing game logic and handling UI updates.</p>
+            <p><strong>Challenges Faced:</strong> Timing game events and user input validation.</p>
+            <p><strong>Achievements:</strong> Created an interactive and visually appealing memory puzzle game.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Memory_Matching_Puzzle.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="pathfinder-sprint">
+    <div class="project">
+        <img src="pathfinder_sprint.jpg" alt="Pathfinder Sprint Icon" class="project-icon">
+        <h2>Pathfinder Sprint</h2>
+        <p>A project focused on implementing different pathfinding algorithms for routing.</p>
+        <button class="toggle-button" onclick="toggleDetails('pathfinderSprintDetails')">Find Out More</button>
+        <div id="pathfinderSprintDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Deepened my understanding of pathfinding algorithms.</p>
+            <p><strong>Challenges Faced:</strong> Dealing with complex routing challenges in a dynamic grid.</p>
+            <p><strong>Achievements:</strong> Developed a system that compares different algorithms in terms of efficiency and accuracy.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Pathfinder-Sprint.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="scenery-maker">
+    <div class="project">
+        <img src="scenery_maker.jpg" alt="Scenery Maker Icon" class="project-icon">
+        <h2>Scenery Maker</h2>
+        <p>A simulation project for generating dynamic landscapes and sceneries.</p>
+        <button class="toggle-button" onclick="toggleDetails('sceneryMakerDetails')">Find Out More</button>
+        <div id="sceneryMakerDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Gained experience in procedural generation and graphics rendering.</p>
+            <p><strong>Challenges Faced:</strong> Understanding advanced graphics techniques and performance optimization.</p>
+            <p><strong>Achievements:</strong> Successfully generated dynamic and realistic sceneries in real-time.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Scenery-Maker.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="chaos-arena">
+    <div class="project">
+        <img src="chaos_arena.jpg" alt="Chaos Arena Icon" class="project-icon">
+        <h2>Chaos Arena</h2>
+        <p>A multiplayer game that involves strategic combat and arena battles.</p>
+        <button class="toggle-button" onclick="toggleDetails('chaosArenaDetails')">Find Out More</button>
+        <div id="chaosArenaDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Experience in multiplayer game development and real-time systems.</p>
+            <p><strong>Challenges Faced:</strong> Synchronizing game states in real-time.</p>
+            <p><strong>Achievements:</strong> Created a fun and competitive arena-based combat game.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/Chaos-Arena.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="cnn">
+    <div class="project">
+        <img src="cnn_from_scratch.jpg" alt="CNN from Scratch Icon" class="project-icon">
+        <h2>CNN from Scratch</h2>
+        <p>Building a Convolutional Neural Network from scratch for image classification tasks.</p>
+        <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button>
+        <div id="cnnDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> Implementing core deep learning techniques from scratch.</p>
+            <p><strong>Challenges Faced:</strong> Debugging complex neural network training issues.</p>
+            <p><strong>Achievements:</strong> Training a CNN for basic image classification tasks.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/rb23ack/CNN-FROM-SCRATCH.git" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
+            <section id="treequest">
+    <div class="project">
+        <img src="tree_quest.jpg" alt="TreeQuest Icon" class="project-icon">
+        <h2>TreeQuest - Algorithmic Adventures</h2>
+        <p>Game for learning key tree algorithms like Binary Search, Merge Sort, Tree Balancing, and DFS.</p>
+        <button class="toggle-button" onclick="toggleDetails('treeQuestDetails')">Find Out More</button>
+        <div id="treeQuestDetails" class="details" style="display:none;">
+            <p><strong>What I Learned:</strong> This game helped me learn how to apply key tree algorithms like Binary Search, Merge Sort, Tree Balancing (AVL Trees), and DFS in real-world scenarios. It also enhanced my problem-solving skills and my understanding of tree structures.</p>
+            <p><strong>Challenges Faced:</strong> The main challenge was implementing complex algorithms efficiently and ensuring smooth game flow while handling multiple algorithmic challenges at once.</p>
+            <p><strong>Achievements:</strong> Successfully built a game that integrates several important tree algorithms, offering an interactive way for learners to understand and apply these concepts.</p>
+            <p><strong>GitHub Repository:</strong> <a href=https://github.com/rb23ack/TreeQuest-Algorithmic_Adventures.git target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+</section>
 
         </section>
     </main>
 
     <footer>
         <p>© 2024 Riya Basak</p>
-    </footer>   
+    </footer>
 
     <script src="script.js" defer></script>
 </body>
