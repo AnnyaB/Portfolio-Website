@@ -12,10 +12,10 @@
 <header>
     <nav>
         <ul>
-             <li><a href="index.html">HOME</a></li>
-                <li><a href="technical.html">TECHNICAL INTERESTS</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="technical.html">TECHNICAL INTERESTS</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
         </ul>
     </nav>
 </header>
@@ -23,105 +23,108 @@
 <main>
     <!-- Button to toggle dark/light mode -->
     <header>
-        <button class="toggle-button adjust-mode">Adjust Mode</button>
+        <button class="toggle-button adjust-mode" id="toggle-button">
+            Switch to Dark Mode
+        </button>
     </header>
+
+   <!-- Help Section -->
+<section id="help-section">
+    <h2>Need Help?</h2>
+    <p>Welcome to my portfolio. You can explore my contact details, education, work experience, skills, extracurricular activities, and projects. Use the navigation links above to jump to specific sections.</p>
+    <button class="help-button" id="help-button">Learn More</button>
+</section>
+
 
     <section id="portfolio">
         <h1>EXPLORE MY PORTFOLIO</h1>
 
         <!-- Navigation Table for Portfolio Sections -->
-
-        <table class="interests-table">
-            <thead>
-                <tr>
-                    <th>All About Me</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td><a href="#contact-details">• Contact Details</a></td></tr>
-                <tr><td><a href="#education">• Education</a></td></tr>
-                <tr><td><a href="#work-experience">• Work Experience</a></td></tr>
-                <tr><td><a href="#skills">• Skills</a></td></tr>
-                <tr><td><a href="#extracurricular">• Extracurricular & Certifications</a></td></tr>
-                <tr><td><a href="#projects">• Projects</a></td></tr>
-            </tbody>
-        </table>
+        <ul class="interests-list">
+    <li><a href="#contact-details"> Contact Details</a></li>
+    <li><a href="#education"> Education</a></li>
+    <li><a href="#work-experience"> Work Experience</a></li>
+    <li><a href="#skills"> Skills</a></li>
+    <li><a href="#extracurricular"> Extracurricular & Certifications</a></li>
+    <li><a href="#projects"> Projects</a></li>
+     </ul>
 
         <h2 id="contact-details">Contact Details</h2>
-        
+
         <p><strong>Email:</strong>
             <a href="mailto:riyabasak639@gmail.com">
-                <img src="EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 16px; height: 16px; vertical-align: middle;">
+                <img src="EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 26px; height: 26px; vertical-align: middle;">
                 riyabasak639@gmail.com
             </a>
         </p>
         <p><strong>LinkedIn:</strong>
             <a href="https://www.linkedin.com/in/riya-b-506346315" target="_blank">
-                <img src="LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 16px; height: 16px; vertical-align: middle;">
+                <img src="LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 26px; height: 26px; vertical-align: middle;">
                 LinkedIn Profile
             </a>
         </p>
 
         <h2 id="education">Education</h2>
-         <h3>
-         <img src="university_of_hertfordshire.jpg" alt="University of Hertfordshire Logo"
-         style="width: 32px; height: 32px; vertical-align: middle;">
-              University of Hertfordshire
-         </h3>
-         <p><strong>Bachelor of Science – Computer Science with a Year in Industry</strong> (Specializing in Artificial Intelligence)</p>
-         <p><em>September 2023 - Present</em></p>
-         <p><strong>Modules Taken:</strong> Intro. To Programming and Discrete Structures, Database Systems, Data Modelling for Databases, From Silicon to C, Algorithms and Data Structures, Computational Problem Solving, Accessibility and Usability, Principles and Practices of Large-Scale Programming.</p>
+        <h3>
+            <img src="university_of_hertfordshire.jpg" alt="University of Hertfordshire Logo"
+                 style="width: 42px; height: 42px; vertical-align: middle;">
+            University of Hertfordshire
+        </h3>
+        <p><strong>Bachelor of Science – Computer Science </strong> (Specializing in Artificial Intelligence)</p>
+        <p><em>September 2023 - Present</em></p>
+        <p><strong>Modules Taken:</strong> Intro. To Programming and Discrete Structures, Database Systems, Data Modelling for Databases, From Silicon to C, Algorithms and Data Structures, Computational Problem Solving, Accessibility and Usability, Principles and Practices of Large-Scale Programming.</p>
 
-         <h3>
-         <img src="ecole_mondiale.jpg" alt="Ecole Mondiale World School Logo"
-         style="width: 32px; height: 32px; vertical-align: middle;">
-             Ecole Mondiale World School
-         </h3>
-         <p><strong>A Levels</strong></p>
-         <p><em>August 2021 – July 2023</em></p>
-         <p><strong>Subjects Taken:</strong> Chemistry (A*), Mathematics (A*), Physics (A*), Computer Science (A)</p>
-
+        <h3>
+            <img src="ecole_mondiale.jpg" alt="Ecole Mondiale World School Logo"
+                 style="width: 42px; height: 42px; vertical-align: middle;">
+            Ecole Mondiale World School
+        </h3>
+        <p><strong>A Levels</strong></p>
+        <p><em>August 2021 – July 2023</em></p>
+        <p><strong>Subjects Taken:</strong> Mathematics, Physics, Chemistry and Computer Science</p>
 
         <h2 id="work-experience">Work Experience</h2>
         <h3>Remote Sensing Technician</h3>
         <p>
             <strong>
-                <img src="isro_icon.jpg" alt="ISRO LOGO" style="width: 32px; height: 32px; vertical-align: middle;">
-                ISRO
+                <img src="isro_icon.jpg" alt="ISRO LOGO" style="width: 42px; height: 42px; vertical-align: middle;">
+                 IIRS (ISRO)
             </strong>
-            - Summer Internship
+            - High School Internship
         </p>
         <p>Gained experience in analytical skills, space science, advanced mathematics, remote sensing, research skills, LIDAR, GIS, geospatial analysis, and optics. Collaborated with 4 interns to deliver solutions within a deadline using SCRUM methodology.</p>
-
-        <h3>Student Developer Intern</h3>
-        <p>
-            <strong>
-                <img src="apple__icon.jpg" alt="Apple LOGO" style="width: 32px; height: 32px; vertical-align: middle;">
-                Apple Developer Academy
-            </strong>
-            - June 2024 – Present
-        </p>
-        <p>Learning Swift programming for iOS app development. Collaborating on the Swift Student Challenge and applying new skills to develop innovative iOS apps.</p>
 
         <h3>Data Clerk</h3>
         <p>
             <strong>
-                <img src="limango_icon.jpg" alt="Limango LOGO" style="width: 32px; height: 32px; vertical-align: middle;">
+                <img src="limango_icon.jpg" alt="Limango LOGO" style="width: 42px; height: 42px; vertical-align: middle;">
                 Limango GmbH
             </strong>
             - January 2024 – April 2024
         </p>
         <p>Managed large data volumes with accuracy and efficiency, ensuring precise entry and systematic organization. Enhanced problem-solving skills to resolve data inconsistencies and streamline operations.</p>
 
+
+        <h3>Software Developer Intern</h3>
+        <p>
+            <strong>
+                <img src="apple__icon.jpg" alt="Apple LOGO" style="width: 42px; height: 42px; vertical-align: middle;">
+                Apple Developer Academy
+            </strong>
+            - June 2024 – Present
+        </p>
+        <p>Learning Swift programming for iOS app development. Collaborating on the Swift Student Challenge and applying new skills to develop innovative iOS apps.</p>
+
+
         <h2 id="skills">Skills</h2>
-        <p><strong>Programming Languages:</strong> Python, Java, Assembly, C, JavaScript (Beginner), PL/SQL, PostgreSQL, Oracle Database</p>
-        <p><strong>Tools & Libraries:</strong> TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, NLTK</p>
-        <p><strong>Other Skills:</strong> PowerPoint, Word</p>
-        <p><strong>Languages:</strong> English (Fluent), Bengali (Native)</p>
+        <p><strong>Programming Languages:</strong> Python, Java, C#, Assembly, C, C++, JavaScript, HTML5, CSS3, PL/SQL, PostgreSQL, Oracle Database, MongoDB</p>
+        <p><strong>Tools & Libraries:</strong> TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, NLTK, SciPy, Matplotlib</p>
+        <p><strong>Other Skills:</strong> PowerPoint, Word, Logisim </p>
+        <p><strong>Languages:</strong> English (Fluent), Bengali (Native), Hindi (Native), Sanskrit(Native), Turkish(Elementary) </p>
 
         <h2 id="extracurricular">Extracurricular & Certifications</h2>
         <ul>
-            <li>Engaged in the Algoverse AI Research Program and participated in the UH Minihackathon (2024)</li>
+            <li>Engaged in the Algoverse AI Research Program </li>
             <li>Contributed to open-source projects as a participant in GirlScript Summer of Code (2024), GDSC Japan student member</li>
             <li>Secured medals in various academic disciplines: 7 golds in IEO, 4 golds in IMO, 2 silvers in NSO (2016-2023)</li>
             <li>Achieved 102nd all-India rank in JEE Advanced. Secured top-tier placements in six JoSAA rounds with JEE Mains rank of 316 (2023)</li>
@@ -130,31 +133,34 @@
         <h2 id="projects">Projects</h2>
         <ul>
             <li>
-                <a href="projects.html#fruit-picker" class="project-link">Fruit-Picker</a> - A fast-paced game where you collect fruits using a virtual basket.
+                <a href="projects.html#fruit-picker" class="project-link">Fruit-Picker</a>
             </li>
             <li>
-                <a href="projects.html#maze-runner" class="project-link">Maze Runner</a> - Navigate through a maze and solve challenges to reach the exit.
+                <a href="projects.html#maze-runner" class="project-link">Maze Runner</a>
             </li>
             <li>
-                <a href="projects.html#rapid-retreat" class="project-link">Rapid Retreat</a> - Escape obstacles in a time-sensitive, action-packed adventure.
+                <a href="projects.html#rapid-retreat" class="project-link">Rapid Retreat</a>
             </li>
             <li>
-                <a href="projects.html#serpent-snack" class="project-link">Serpent Snack</a> - A classic snake game where you grow longer by eating food while avoiding collisions.
+                <a href="projects.html#serpent-snack" class="project-link">Serpent Snack</a>
             </li>
             <li>
-                <a href="projects.html#memory-matching-puzzle" class="project-link">Memory Matching Puzzle</a> - Match pairs of cards to test your memory skills.
+                <a href="projects.html#memory-matching-puzzle" class="project-link">Memory Matching Puzzle</a>
             </li>
             <li>
-                <a href="projects.html#cnn" class="project-link">Convolutional Neural Network (CNN)</a> - Built a CNN for image classification, exploring machine learning techniques.
+                <a href="projects.html#cnn" class="project-link">Convolutional Neural Network (CNN)</a>
             </li>
             <li>
-                <a href="projects.html#pathfinder-sprint" class="project-link">Pathfinder Sprint</a> - A simple grid-based game where the player navigates from a starting point to a goal.
+                <a href="projects.html#pathfinder-sprint" class="project-link">Pathfinder Sprint</a>
             </li>
             <li>
-                <a href="projects.html#scenery-maker" class="project-link">Scenery Maker</a> - A graphical scenery depicting a truck, tree, and sun in Java.
+                <a href="projects.html#scenery-maker" class="project-link">Scenery Maker</a>
             </li>
             <li>
-                <a href="projects.html#chaos-arena" class="project-link">Chaos Arena</a> - A turn-based battle game using a max-heap priority system to manage entities actions based on attributes.
+                <a href="projects.html#chaos-arena" class="project-link">Chaos Arena</a>
+            </li>
+            <li>
+                <a href="projects.html#treequest" class="project-link">TreeQuest - Algorithmic Adventures</a>
             </li>
         </ul>
     </section>
@@ -166,7 +172,6 @@
 </footer>
 
 <script src="script.js" defer></script>
-
 </body>
 </html>
 
