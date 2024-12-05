@@ -149,4 +149,4 @@ document.getElementById('help-button').addEventListener('click', function () {
         // Append the content to the help section
         document.getElementById('help-section').appendChild(helpContent);
     }
-});
+});    
