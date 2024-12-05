@@ -4,20 +4,78 @@ document.querySelector('.toggle-button').addEventListener('click', () => {
     updateTextColor();  // Adjust text color when mode changes
     updateButtonText();  // Update button text based on the current mode
     showStatusMessage(); // Show status message with feedback on mode change
+    updateHistory();     // Update history on mode change
 });
-
-// Toggle project details visibility
-function toggleDetails(id) {
-    const details = document.getElementById(id);
-    details.style.display = (details.style.display === "block") ? "none" : "block";
+// Update history on theme change
+function updateHistory() {
+    const newMode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    modeHistory.push(newMode);
+    currentHistoryIndex = modeHistory.length - 1;
+    localStorage.setItem('theme', newMode); // Persist mode in localStorage
 }
 
-// Setting project details to be hidden initially
+// Toggle project details visibility
+function toggleDetails(id, button) {
+    const details = document.getElementById(id);
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        button.textContent = "Show Details"; // Update button text
+    } else {
+        details.style.display = "block";
+        button.textContent = "Hide Details"; // Update button text
+    }
+}
+
+// Setting project details to be hidden initially and binding event listeners
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.project-details').forEach(details => {
-        details.style.display = 'none';
+        details.style.display = 'none'; // Hide details initially
     });
+
+    document.querySelectorAll('.toggle-details-button').forEach(button => {
+        const targetId = button.getAttribute('data-target'); // Get the target details ID
+        button.textContent = "Show Details"; // Set initial button text
+        button.addEventListener('click', () => toggleDetails(targetId, button)); // Bind click event
+    });
+
+    // Initialize tooltip for first-time users
+    const tooltip = createTooltip();
+    const button = document.querySelector('.toggle-button');
+    button.parentElement.appendChild(tooltip);
+
+    // Tooltip functionality
+    button.addEventListener('mouseenter', () => showTooltip(tooltip, button));
+    button.addEventListener('mouseleave', () => hideTooltip(tooltip));
+    button.addEventListener('click', () => tooltip.remove()); // Remove tooltip after first click
 });
+
+// Create a tooltip element
+function createTooltip() {
+    const tooltip = document.createElement('div');
+    tooltip.classList.add('tooltip');
+    tooltip.textContent = "Dark mode reduces strain on your eyes by using a darker color scheme.";
+    tooltip.style.position = "absolute";
+    tooltip.style.backgroundColor = "#333";
+    tooltip.style.color = "#fff";
+    tooltip.style.padding = "8px";
+    tooltip.style.borderRadius = "5px";
+    tooltip.style.fontSize = "12px";
+    tooltip.style.display = "none"; // Hidden by default
+    tooltip.style.zIndex = "1000";
+    return tooltip;
+}
+
+// Show tooltip on hover
+function showTooltip(tooltip, button) {
+    tooltip.style.display = "block";
+    tooltip.style.top = `${button.offsetTop - 30}px`;
+    tooltip.style.left = `${button.offsetLeft}px`;
+}
+
+// Hide tooltip
+function hideTooltip(tooltip) {
+    tooltip.style.display = "none";
+}
 
 // Update text color when switching between dark and light modes
 function updateTextColor() {
@@ -35,11 +93,13 @@ function updateTextColor() {
 function updateButtonText() {
     const button = document.querySelector('.toggle-button');
     if (document.body.classList.contains('dark-mode')) {
-        button.textContent = 'Switch to Light Mode';
+        button.textContent = 'Enable Light Mode';
     } else {
-        button.textContent = 'Switch to Dark Mode';
+        button.textContent = 'Enable Dark Mode';
     }
 }
+
+
 
 // Display a status message to confirm mode change
 function showStatusMessage() {
@@ -148,5 +208,4 @@ document.getElementById('help-button').addEventListener('click', function () {
 
         // Append the content to the help section
         document.getElementById('help-section').appendChild(helpContent);
-    }
-});    
+    }  
