@@ -1,6 +1,6 @@
 // Toggle Dark/Light Mode
 document.querySelector('.toggle-button').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode'); 
+    document.body.classList.toggle('dark-mode');
     updateTextColor();  // Adjust text color when mode changes
     updateButtonText();  // Update button text based on the current mode
     showStatusMessage(); // Show status message with feedback on mode change
@@ -208,4 +208,6 @@ document.getElementById('help-button').addEventListener('click', function () {
 
         // Append the content to the help section
         document.getElementById('help-section').appendChild(helpContent);
-    }  
+    }
+});
+
