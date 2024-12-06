@@ -210,4 +210,3 @@ document.getElementById('help-button').addEventListener('click', function () {
         document.getElementById('help-section').appendChild(helpContent);
     }
 });
-
