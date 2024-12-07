@@ -465,6 +465,29 @@ body.dark-mode .experience-item {
         padding: 15px;
     }
 }
+.close-disclaimer {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    line-height: 1;
+}
+
+body.dark-mode .close-disclaimer {
+    color: #bbb;
+}
+
+.close-disclaimer:hover {
+    color: #000;
+}
+
+body.dark-mode .close-disclaimer:hover {
+    color: #fff;
+}
 
     
    
