@@ -1,4 +1,4 @@
-// Toggle Dark/Light Mode
+//Toggle Dark/Light Mode
 document.querySelector('.toggle-button').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     updateTextColor();  // Adjust text color when mode changes
@@ -210,3 +210,8 @@ document.getElementById('help-button').addEventListener('click', function () {
         document.getElementById('help-section').appendChild(helpContent);
     }
 });
+//for disclaimer banner
+function dismissDisclaimer() {
+    const banner = document.querySelector('.disclaimer-banner');
+    banner.style.display = 'none';
+}
