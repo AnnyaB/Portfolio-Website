@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="disclaimer-banner">
-        <p>
-            Disclaimer: All images used on this website are created using Freepik and are not copied or stolen from any source.
-        </p>
-        <button class="close-disclaimer" onclick="dismissDisclaimer()">×</button>
-    </div>
+    
 <!-- Main header with navigation -->
 <header>
     <nav>
@@ -60,24 +55,24 @@
 
         <p><strong>Email:</strong>
             <a href="mailto:riyabasak639@gmail.com">
-                <img src="EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 26px; height: 26px; vertical-align: middle;">
+                <img src="/images/EMAIL-IMAGE.jpg" alt="Email Icon" style="width: 26px; height: 26px; vertical-align: middle;">
                 riyabasak639@gmail.com
             </a>
         </p>
         <p><strong>LinkedIn:</strong>
             <a href="https://www.linkedin.com/in/riya-b-506346315" target="_blank">
-                <img src="LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 26px; height: 26px; vertical-align: middle;">
+                <img src="/images/LINKEDIN-IMAGE.jpg" alt="LinkedIn Icon" style="width: 26px; height: 26px; vertical-align: middle;">
                 LinkedIn Profile
             </a>
         </p>
-
+       <!--Education section-->
        <section id="education">
     <h2>Education</h2>
 
     <!-- University of Hertfordshire Section -->
     <div class="education-item">
         <h3>
-            <img src="university_of_hertfordshire.jpg" alt="University of Hertfordshire Logo"
+            <img src="/images/university_of_hertfordshire.jpg" alt="University of Hertfordshire Logo"
                  class="education-logo">
             University of Hertfordshire
         </h3>
@@ -100,7 +95,7 @@
     <!-- Ecole Mondiale World School Section -->
     <div class="education-item">
         <h3>
-            <img src="ecole_mondiale.jpg" alt="Ecole Mondiale World School Logo"
+            <img src="/images/ecole_mondiale.jpg" alt="Ecole Mondiale World School Logo"
                  class="education-logo">
             Ecole Mondiale World School
         </h3>
@@ -115,16 +110,48 @@
         </ul>
     </div>
 </section>
-
-       <section id="work-experience">
+<!--Work Experience section-->
+<section id="work-experience">
     <h2>Work Experience</h2>
+
+
+     <!-- Software Developer Intern -->
+    <div class="experience-item">
+        <h3>Software Developer Intern</h3>
+        <p>
+            <strong>
+                <img src="/images/apple__icon.jpg" alt="Apple LOGO" class="experience-logo">
+                Apple Developer Academy
+            </strong> - June 2024 – Present
+        </p>
+        <p>
+            Learning Swift programming for iOS app development. Collaborating on the Swift Student Challenge and applying
+            new skills to develop innovative iOS apps.
+        </p>
+    </div>
+
+     <!-- Data Clerk -->
+    <div class="experience-item">
+        <h3>Data Clerk</h3>
+        <p>
+            <strong>
+                <img src="/images/limango_icon.jpg" alt="Limango LOGO" class="experience-logo">
+                Limango GmbH
+            </strong> - January 2024 – April 2024
+        </p>
+        <p>
+            Managed large data volumes with accuracy and efficiency, ensuring precise entry and systematic organization.
+            Enhanced problem-solving skills to resolve data inconsistencies and streamline operations.
+        </p>
+    </div>
+
 
     <!-- Remote Sensing Technician -->
     <div class="experience-item">
         <h3>Remote Sensing Technician</h3>
         <p>
             <strong>
-                <img src="isro_icon.jpg" alt="ISRO LOGO" class="experience-logo">
+                <img src="/images/isro_icon.jpg" alt="ISRO LOGO" class="experience-logo">
                 IIRS (ISRO)
             </strong> - High School Internship
         </p>
@@ -135,37 +162,9 @@
         </p>
     </div>
 
-    <!-- Data Clerk -->
-    <div class="experience-item">
-        <h3>Data Clerk</h3>
-        <p>
-            <strong>
-                <img src="limango_icon.jpg" alt="Limango LOGO" class="experience-logo">
-                Limango GmbH
-            </strong> - January 2024 – April 2024
-        </p>
-        <p>
-            Managed large data volumes with accuracy and efficiency, ensuring precise entry and systematic organization.
-            Enhanced problem-solving skills to resolve data inconsistencies and streamline operations.
-        </p>
-    </div>
 
-    <!-- Software Developer Intern -->
-    <div class="experience-item">
-        <h3>Software Developer Intern</h3>
-        <p>
-            <strong>
-                <img src="apple__icon.jpg" alt="Apple LOGO" class="experience-logo">
-                Apple Developer Academy
-            </strong> - June 2024 – Present
-        </p>
-        <p>
-            Learning Swift programming for iOS app development. Collaborating on the Swift Student Challenge and applying
-            new skills to develop innovative iOS apps.
-        </p>
-    </div>
 </section>
-
+<!--Skills-->
 <h2 id="skills">Skills</h2>
 <div class="skills-section">
     <div class="skills-category">
@@ -177,6 +176,7 @@
             <li>C</li>
             <li>C++</li>
             <li>C#</li>
+            <li>Swift</li>
             <li>JavaScript</li>
             <li>HTML5 (beginner)</li>
             <li>CSS3 (beginner)</li>
@@ -223,7 +223,7 @@
         </ul>
     </div>
 </div>
-
+<!--Extracurricular-->
         <section id="extracurricular" class="section">
     <h2>Extracurricular & Certifications</h2>
     <ul class="certifications-list">
@@ -250,7 +250,7 @@
     </ul>
 </section>
 
-
+<!--Projects-->
         <h2 id="projects">Projects</h2>
         <ul>
             <li>
@@ -292,9 +292,10 @@
     <p>© 2024 Riya Basak</p>
 </footer>
 
-<script src="script.js" defer></script>
+<script src="/js/script.js" defer></script>
 </body>
 </html>
+
 
 
 
