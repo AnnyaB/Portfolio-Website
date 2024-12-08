@@ -465,29 +465,55 @@ body.dark-mode .experience-item {
         padding: 15px;
     }
 }
+/* Disclaimer Banner Styling */
+.disclaimer-banner {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 235, 59, 0.9); /* Yellow background */
+    color: #333; /* Dark text for better readability */
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* Close Button Styling */
 .close-disclaimer {
-    background: none;
+    background-color: #ffeb3b; /* Lighter yellow button */
+    color: #333; /* Dark text for contrast */
     border: none;
-    font-size: 1.2em;
-    color: #999;
+    padding: 5px 10px;
+    font-size: 18px;
     cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 5px;
-    line-height: 1;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
-body.dark-mode .close-disclaimer {
-    color: #bbb;
-}
-
+/* Close Button Hover Effect */
 .close-disclaimer:hover {
-    color: #000;
+    background-color: #fbc02d; /* Darker yellow on hover */
 }
 
-body.dark-mode .close-disclaimer:hover {
-    color: #fff;
+/* Disclaimer Text Styling */
+.disclaimer-banner p {
+    margin: 0;
+    padding-right: 15px;
+    font-size: 14px;
+    flex-grow: 1;
 }
+
+/* Ensure the page content starts below the disclaimer */
+body {
+    padding-top: 60px; /* Adjust based on the height of the disclaimer */
+}
+
 
     
    
