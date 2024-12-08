@@ -6,16 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div class="disclaimer-banner">
-        <p>
-            Disclaimer: All images used on this website are created using Freepik and are not copied or stolen from any source.
-        </p>
-        <button class="close-disclaimer" onclick="dismissDisclaimer()">×</button>
-    </div>
+    
     <header>
         <nav>
             <ul>
@@ -35,17 +30,20 @@
     </header>
 
     <main>
+        <!-- Concise and clear page introduction -->
         <section id="projects">
             <h1>My Projects</h1>
-            <p>Welcome to my projects page! Below you will find a list of the exciting projects I have worked on, showcasing my skills in various areas including algorithms, game development, Artificial Intelligence, and much more. Click "Find Out More" to learn about the challenges I faced, what I learned, and to access the GitHub repositories for each project.</p>
-
+            <p>Showcasing algorithmic skills through game development, blending learning and fun. Click "Find Out More" for challenges, insights, and GitHub links.</p>
+        </section>
+        
+        
 
             <!-- GitHub Link -->
             <section id="My-GitHub">
                 <h2>Learn More About My Work</h2>
                 <div class="github-link">
                     <a href="https://github.com/rb23ack" target="_blank" style="opacity: 1; color: white; background-color: #2C3E50;">
-                        <img src="GITHUB.jpg" alt="GitHub Logo" style="width: 42px; height: 42px;"> Visit My GitHub
+                        <img src="/images/GITHUB.jpg" alt="GitHub Logo" style="width: 42px; height: 42px;"> Visit My GitHub
                     </a>
                 </div>
             </section>
@@ -67,7 +65,7 @@
             <!-- Project Details Section  -->
            <section id="fruit-picker">
     <div class="project">
-        <img src="fruit_picker.jpg" alt="Fruit Picker Icon" class="project-icon">
+        <img src="/images/fruit_picker.jpg" alt="Fruit Picker Icon" class="project-icon">
         <h2>Fruit-Picker</h2>
         <p>Based on Data Structures & Algorithms concepts. Implemented "choose and display" using binary search </p>
         <button class="toggle-button" onclick="toggleDetails('fruitPickerDetails')">Find Out More</button>
@@ -83,7 +81,7 @@
 
             <section id="maze-runner">
     <div class="project">
-        <img src="maze_runner.jpg" alt="Maze Runner Icon" class="project-icon">
+        <img src="/images/maze_runner.jpg" alt="Maze Runner Icon" class="project-icon">
         <h2>Maze Runner</h2>
         <p>Pathfinding algorithm-based project using the A* algorithm </p>
         <button class="toggle-button" onclick="toggleDetails('mazeRunnerDetails')">Find Out More</button>
@@ -100,7 +98,7 @@
 
            <section id="rapid-retreat">
     <div class="project">
-        <img src="rapid_retreat.jpg" alt="Rapid Retreat Icon" class="project-icon">
+        <img src="/images/rapid_retreat.jpg" alt="Rapid Retreat Icon" class="project-icon">
         <h2>Rapid Retreat</h2>
         <p>Focused on practicing fundamental Object-Oriented Programming in Java </p>
         <button class="toggle-button" onclick="toggleDetails('rapidRetreatDetails')">Find Out More</button>
@@ -116,7 +114,7 @@
 
 <section id="serpent-snack">
     <div class="project">
-        <img src="serpent_snack.jpg" alt="Serpent Snack Icon" class="project-icon">
+        <img src="/images/serpent_snack.jpg" alt="Serpent Snack Icon" class="project-icon">
         <h2>Serpent Snack</h2>
         <p>Classic snake game where players collect apples to grow the snake </p>
         <button class="toggle-button" onclick="toggleDetails('serpentSnackDetails')">Find Out More</button>
@@ -132,7 +130,7 @@
 
 <section id="memory-matching-puzzle">
     <div class="project">
-        <img src="memory_matching_puzzle.jpg" alt="Memory Matching Puzzle Icon" class="project-icon">
+        <img src="/images/memory_matching_puzzle.jpg" alt="Memory Matching Puzzle Icon" class="project-icon">
         <h2>Memory Matching Puzzle</h2>
         <p>A fun game where players match cards based on memory </p>
         <button class="toggle-button" onclick="toggleDetails('memoryMatchingPuzzleDetails')">Find Out More</button>
@@ -148,7 +146,7 @@
 
 <section id="pathfinder-sprint">
     <div class="project">
-        <img src="pathfinder_sprint.jpg" alt="Pathfinder Sprint Icon" class="project-icon">
+        <img src="/images/pathfinder_sprint.jpg" alt="Pathfinder Sprint Icon" class="project-icon">
         <h2>Pathfinder Sprint</h2>
         <p>A project focused on implementing different pathfinding algorithms for routing </p>
         <button class="toggle-button" onclick="toggleDetails('pathfinderSprintDetails')">Find Out More</button>
@@ -164,7 +162,7 @@
 
 <section id="scenery-maker">
     <div class="project">
-        <img src="scenery_maker.jpg" alt="Scenery Maker Icon" class="project-icon">
+        <img src="/images/scenery_maker.jpg" alt="Scenery Maker Icon" class="project-icon">
         <h2>Scenery Maker</h2>
         <p>A simulation project for generating dynamic landscapes and sceneries </p>
         <button class="toggle-button" onclick="toggleDetails('sceneryMakerDetails')">Find Out More</button>
@@ -180,7 +178,7 @@
 
 <section id="chaos-arena">
     <div class="project">
-        <img src="chaos_arena.jpg" alt="Chaos Arena Icon" class="project-icon">
+        <img src="/images/chaos_arena.jpg" alt="Chaos Arena Icon" class="project-icon">
         <h2>Chaos Arena</h2>
         <p>A multiplayer game that involves strategic combat and arena (battlefield) battles </p>
         <button class="toggle-button" onclick="toggleDetails('chaosArenaDetails')">Find Out More</button>
@@ -196,9 +194,9 @@
 
 <section id="cnn">
     <div class="project">
-        <img src="cnn_from_scratch.jpg" alt="CNN from Scratch Icon" class="project-icon">
+        <img src="/images/cnn_from_scratch.jpg" alt="CNN from Scratch Icon" class="project-icon">
         <h2>CNN from Scratch</h2>
-        <p>Building a Convolutional Neural Network from scratch for image classification tasks </p>
+        <p>Building a Convolutional Neural Network from scratch for image classification tasks. Work in progress </p>
         <button class="toggle-button" onclick="toggleDetails('cnnDetails')">Find Out More</button>
         <div id="cnnDetails" class="details" style="display:none;">
             <p><strong>Languages:</strong> Python </p>
@@ -211,9 +209,9 @@
 </section>
             <section id="treequest">
     <div class="project">
-        <img src="tree_quest.jpg" alt="TreeQuest Icon" class="project-icon">
+        <img src="/images/tree_quest.jpg" alt="TreeQuest Icon" class="project-icon">
         <h2>TreeQuest - Algorithmic Adventures</h2>
-        <p>Game for learning key tree algorithms like Binary Search, Depth First Search etc </p>
+        <p>Game for learning key tree algorithms like Binary Search, Depth First Search etc. Work in progress </p>
         <button class="toggle-button" onclick="toggleDetails('treeQuestDetails')">Find Out More</button>
         <div id="treeQuestDetails" class="details" style="display:none;">
             <p><strong>Languages:</strong> C, C++ </p>
@@ -232,10 +230,11 @@
         <p>© 2024 Riya Basak</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="/js/script.js" defer></script>
 </body>
-  
+
 </html>
+
 
 
 
