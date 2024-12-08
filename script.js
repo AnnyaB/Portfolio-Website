@@ -106,9 +106,9 @@ function showStatusMessage() {
     const message = document.createElement('div');
     message.classList.add('status-message');
     if (document.body.classList.contains('dark-mode')) {
-        message.textContent = 'Switched to Dark Mode';
+        message.textContent = 'Dark Mode On';
     } else {
-        message.textContent = 'Switched to Light Mode';
+        message.textContent = 'Light Mode On';
     }
 
     // Append message to the body and show it
@@ -210,8 +210,8 @@ document.getElementById('help-button').addEventListener('click', function () {
         document.getElementById('help-section').appendChild(helpContent);
     }
 });
-//for disclaimer banner
+
+//Disclaimer Banner
 function dismissDisclaimer() {
-    const banner = document.querySelector('.disclaimer-banner');
-    banner.style.display = 'none';
+    document.querySelector('.disclaimer-banner').style.display = 'none';
 }
