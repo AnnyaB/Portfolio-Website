@@ -513,6 +513,97 @@ body.dark-mode .experience-item {
 body {
     padding-top: 60px; /* Adjust based on the height of the disclaimer */
 }
+/* Responsive Design */
+
+/* General styles for tablets (screen width: 600px to 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    main {
+        margin: 0 10px;
+    }
+
+    .toggle-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .section, .skills-section, .education-item, .experience-item {
+        padding: 10px;
+    }
+}
+
+/* Styles for phones (screen width: 600px and smaller) */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .toggle-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    main {
+        margin: 0;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .project, .skills-section, .education-item, .experience-item {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .disclaimer-banner {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .close-disclaimer {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
 
 
     
