@@ -1,20 +1,19 @@
+## The main project has been submitted to the university's private repository, along with accessibility and usability reports.
 
-## The main work has been submitted to the University's private repository along with the accessibility and usability reports
+- This repository was created for the development of the actual website.
 
-- This repository was made for the development purpose of the actual website
+## Coursework is focused on frontend web development (no backend usage)
 
-## CW based on frontend web-dev (No backend usage)
+- Integration of:
+  - HTML5
+  - CSS3
+  - Vanilla JavaScript
+- No templates or libraries are being used. 
 
-- Integrating 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No templates or libraries are being implemented 
-  
-## Focus is on
+## Focus Areas
 
 - Web Accessibility
 - Web Usability
-- Conformance should meet the requirements of Level AA
-- Simple yet aesthetic design
-
+- Conformance with Level AA requirements
+- A simple yet aesthetically pleasing design
+- Additional features will be added in the future, while prioritizing accessibility and usability.
