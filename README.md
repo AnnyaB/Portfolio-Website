@@ -2,7 +2,7 @@
 
 - This repository was created for the development of the actual website.
 
-## Coursework is focused on frontend web development (no backend usage)
+## Coursework is focused on frontend web development (no backend usage)    
 
 - Integration of:
   - HTML5
