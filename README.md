@@ -7,7 +7,7 @@
 - Integration of:
   - HTML5       
   - CSS3
-  - Vanilla JavaScript
+  - Vanilla JavaScript    
 - No templates or libraries are being used.   
 
 ## Focus Areas
