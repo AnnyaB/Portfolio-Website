@@ -12,7 +12,7 @@
 
 ## Focus Areas
 
-- Web Accessibility
+- Web Accessibility   
 - Web Usability
 - Conformance with Level AA requirements
 - A simple yet aesthetically pleasing design
