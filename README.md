@@ -8,7 +8,7 @@
   - HTML5
   - CSS3
   - Vanilla JavaScript
-- No templates or libraries are being used. 
+- No templates or libraries are being used.   
 
 ## Focus Areas
 
