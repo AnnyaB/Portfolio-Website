@@ -5,7 +5,7 @@
 ## Coursework is focused on frontend web development (no backend usage)    
 
 - Integration of:
-  - HTML5
+  - HTML5    
   - CSS3
   - Vanilla JavaScript
 - No templates or libraries are being used.   
