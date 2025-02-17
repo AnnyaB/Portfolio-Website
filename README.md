@@ -14,7 +14,7 @@
 
 - Web Accessibility   
 - Web Usability
-- Conformance with Level AA requirements
+- Conformance with Level AA requirements  
 - A simple yet aesthetically pleasing design
 - Additional features will be added in the future, while prioritizing accessibility and usability.
 
