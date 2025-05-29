@@ -1,0 +1,15 @@
+# .gitignore
+
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
