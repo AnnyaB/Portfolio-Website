@@ -21,4 +21,5 @@
 
 - More features will be added for better usability concerns.
 - Features for easy navigation and enabling modes will be developed further as well.
-- Backend features tb embedded 
+- Backend features tb embedded
+- Contact me form page tbd 
