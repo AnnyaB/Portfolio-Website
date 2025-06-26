@@ -605,6 +605,124 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 14px;
+    }
 
+    nav ul {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .toggle-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .project,
+    .section,
+    .skills-section,
+    .education-item,
+    .experience-item {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .skills-category h3 {
+        font-size: 1.2em;
+    }
+
+    .certifications-list li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .disclaimer-banner {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .disclaimer-banner p {
+        margin-bottom: 5px;
+        padding-right: 0;
+    }
+
+    .close-disclaimer {
+        padding: 6px 10px;
+        font-size: 13px;
+        align-self: flex-end;
+    }
+
+    .status-message {
+        top: 80px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    .education-logo,
+    .experience-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    * {
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button,
+    a,
+    input,
+    textarea {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
     
    
